@@ -1,0 +1,12 @@
+
+on:
+  issue_comment: {}
+
+jobs:
+  dump:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo $GITHUB_EVENT_PATH
+          cat $GITHUB_EVENT_PATH
+
