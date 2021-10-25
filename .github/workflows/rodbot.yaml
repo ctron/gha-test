@@ -10,4 +10,5 @@ jobs:
       - run: |
           sudo curl -sSL https://github.com/ctron/rodbot/releases/download/v0.1.1/rodbot-linux-amd64 -o /usr/bin/rodbot
           sudo chmod a+x /usr/bin/rodbot
+          ls -la /usr/bin/rodbot
       - run: rodbot
