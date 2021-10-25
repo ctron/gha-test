@@ -14,4 +14,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - uses: ctron/rodbot-action@latest
+      - uses: ctron/rodbot-action@main
