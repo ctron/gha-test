@@ -1,0 +1,13 @@
+name: RodBot
+
+on:
+  issue_comment: {}
+
+jobs:
+  rodbot:
+    runs-on: ubuntu-20.04
+    steps:
+      - run:
+          curl -sSL https://github.com/ctron/rodbot/releases/download/v0.1.1/rodbot-linux-amd64 -o /usr/local/bin/rodbot
+          chmod a+x /usr/local/bin/rodbot
+      - run: rodbot

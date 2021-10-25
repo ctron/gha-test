@@ -1,0 +1,9 @@
+on:
+  issue_comment:
+    - if:
+        - command: "test"
+        - user_is: ["MEMBER", "OWNER"]
+        - is_pr
+      steps:
+        - run: |
+            gh issue comment ${{ github.event.issue.number }} -b "Aye, aye, captain!"
