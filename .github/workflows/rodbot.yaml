@@ -13,4 +13,4 @@ jobs:
           curl -sL https://github.com/ctron/rodbot/releases/download/v0.1.1/rodbot-linux-amd64 -o "$HOME/.local/bin/rodbot"
           chmod a+x "$HOME/.local/bin/rodbot"
           file "$HOME/.local/bin/rodbot"
-      - run: "$HOME/.local/bin/rodbot"
+      - run: "/home/runner/.local/bin/rodbot"
