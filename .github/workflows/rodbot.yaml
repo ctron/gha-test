@@ -7,9 +7,11 @@ jobs:
   rodbot:
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - run: |
           mkdir -p "$HOME/.local/bin"
           echo "$HOME/.local/bin" >> $GITHUB_PATH
           curl -sL https://github.com/ctron/rodbot/releases/download/v0.1.1/rodbot-linux-amd64 -o "$HOME/.local/bin/rodbot"
           chmod a+x "$HOME/.local/bin/rodbot"
-      - run: /home/runner/.local/bin/rodbot -vvv
+      - run: /home/runner/.local/bin/rodbot
