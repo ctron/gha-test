@@ -9,5 +9,5 @@ jobs:
     steps:
       - run: |
           sudo curl -sSL https://github.com/ctron/rodbot/releases/download/v0.1.1/rodbot-linux-amd64 -o /usr/bin/rodbot
-          chmod a+x /usr/bin/rodbot
+          sudo chmod a+x /usr/bin/rodbot
       - run: rodbot
