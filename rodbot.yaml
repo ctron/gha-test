@@ -6,4 +6,4 @@ on:
         - is_pr
       steps:
         - run: |
-            gh issue comment ${{ github.event.issue.number }} -b "Aye, aye, captain!"
+            gh pr comment ${{ github.event.issue.number }} -b "Aye, aye, captain!"
